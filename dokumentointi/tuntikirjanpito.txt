@@ -1,0 +1,8 @@
+15.1
+Käytetty aika: 45 min 
+Ajankäytön kohde: Git:iin tutustuminen
+
+16.1
+Käytetty aika: 1 h 30 min
+Ajankäytön kohde: Netbeans-projektin luominen, aiheen kuvauksen kirjoittaminen,
+tuntikirjanpidon aloittaminen
