@@ -6,3 +6,13 @@ Ajankäytön kohde: Git:iin tutustuminen
 Käytetty aika: 1 h 30 min
 Ajankäytön kohde: Netbeans-projektin luominen, aiheen kuvauksen kirjoittaminen,
 tuntikirjanpidon aloittaminen
+
+22.1
+Käytetty aika: 2 h 
+Ajankäytön kohde: Painin ongelman kanssa, joka syntyi kun ohjelma heitti virheilmoituksen,
+kun painoin ENTERIÄ
+
+23.1
+Käyetty aika: 3 h
+Ajankäytön kohde: Loin testejä, muokkasin hieman koodia ja koitin selvittää miksi
+Pit-testien luominen ei onnistu.
