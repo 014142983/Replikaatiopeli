@@ -37,6 +37,8 @@ public class EmasjarjestysTest {
         for (int i = 0; i < e.getPituus(); i++) {
             if (s.charAt(i) == 'A' || s.charAt(i) == 'T' || s.charAt(i) == 'C' || s.charAt(i) == 'G') {
                 tarkistus = true;
+            } else {
+                tarkistus = false;
             }
         }
         assertEquals(tarkistus, true);
