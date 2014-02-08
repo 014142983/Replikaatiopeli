@@ -1,4 +1,4 @@
-package ohha.replikaatiopeli;
+package ohha.replikaatiopeli.grafiikka;
 
 
 import java.awt.Container;
@@ -10,6 +10,9 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
+import ohha.replikaatiopeli.domain.Emasjarjestys;
+import ohha.replikaatiopeli.domain.LahettiRNA;
+import ohha.replikaatiopeli.logiikka.Vertailija;
 
 /*
  * To change this template, choose Tools | Templates
@@ -18,7 +21,9 @@ import javax.swing.WindowConstants;
 
 /**
  *
- * @author Henri
+ * @author Leo Kallonen leo.kallonen@gmail.com
+ * @version 1.1
+ * @since 2014-02-05
  */
 public class GraafinenKali implements Runnable {
     
@@ -33,11 +38,11 @@ public class GraafinenKali implements Runnable {
         this.vertailija = vertailija;
         this.sekvenssi = sekvenssi;
         sekvenssi.luoEmasjarjestys();
-        this.mallijuoste = new JLabel(sekvenssi.getSekvenssi());
+        this.mallijuoste = new JLabel(sekvenssi.getOsaSekvenssista());
         this.rna = new LahettiRNA();
         this.lahettiRNA = new JLabel(rna.getLahettiRNA());
     }
-    
+ 
     @Override
     public void run() {
         frame = new JFrame("Replikaatiopeli");
@@ -49,7 +54,13 @@ public class GraafinenKali implements Runnable {
         frame.pack();
         frame.setVisible(true);
     }
-    
+    /**
+     * Luo graafisen käyttöliittymän ikkunaan sisällön, jossa on painikkeet, jotka
+     * toimivat käyttäjän syötteenä sekä kaksi tekstikenttää. Toisessa on satunnaisesti generoitu
+     * sekvenssi-merkkijono ja toisessa käyttäjän napinpainalluksista syntyvä merkkijono. 
+     * 
+     * @param c container-olio, johon sisältö lisätään
+     */
     private void luoKomponentit(Container c) {
         GridLayout layout = new GridLayout(3, 2);
         c.setLayout(layout);
@@ -62,7 +73,11 @@ public class GraafinenKali implements Runnable {
         c.add(luoCJaG());
         c.add(luoUJaA());
     }
-    
+    /**
+     * Luo C- ja G-painikkeet, joiden painallukset toimivat syötteenä sovelluslogiikalle.
+     * 
+     * @return C- ja G-painikkeet
+     */
     public JPanel luoCJaG() {
         JPanel panel = new JPanel();
         GridLayout layout = new GridLayout(1, 2);
@@ -77,7 +92,11 @@ public class GraafinenKali implements Runnable {
         panel.add(guaniini);
         return panel;
     }
-    
+    /**
+     * Luo U- ja A-painikkeet, joiden painallukset toimivat syötteenä sovelluslogiikalle.
+     * 
+     * @return U- ja A-painikkeet 
+     */
     public JPanel luoUJaA() {
         JPanel panel = new JPanel();
         GridLayout layout = new GridLayout(1,2);

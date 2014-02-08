@@ -16,3 +16,21 @@ kun painoin ENTERIÄ
 Käyetty aika: 3 h
 Ajankäytön kohde: Loin testejä, muokkasin hieman koodia ja koitin selvittää miksi
 Pit-testien luominen ei onnistu.
+
+30.1
+Käytetty aika: 4 h
+Ajankäytön kohde: Yritin luoda peliin aikarajoituksen. Eli RNA-juoste tulisi saada generoitua 
+rajallisessa ajassa. En kuitenkaan onnistunut.
+
+5.2
+Käytetty aika: 1 h
+Ajankäytön kohde: Aloitin graafisen käyttöliittymän luomisen.
+
+6.2
+Käytetty aika: 5 h 30 min
+Ajankäytön kohde: Loin ensimmäisen version graafisesta käyttöliittymästä.
+
+8.2
+Käytetty aika: 5 h
+Ajankäytön kohde: Testien kirjoittaminen, sekvenssi- ja luokkakaavioiden piirtäminen, sekä
+JavaDocin aloittaminen.
