@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
  */
 public class VertailijaTest {
 
-    Vertailija v;
+    EmasVertailija v;
     Emasjarjestys e;
     String s;
 
@@ -27,7 +27,7 @@ public class VertailijaTest {
 
     @Before
     public void setUp() {
-        v = new Vertailija();
+        v = new EmasVertailija();
         e = new Emasjarjestys();
         e.luoEmasjarjestys();
         s = e.getSekvenssi();

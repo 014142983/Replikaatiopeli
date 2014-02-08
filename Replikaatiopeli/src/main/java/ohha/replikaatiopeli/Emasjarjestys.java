@@ -15,10 +15,12 @@ public class Emasjarjestys {
 
     private String emakset;
     private String sekvenssi;
+    private int jarjestysluku;
 
     public Emasjarjestys() {
         this.sekvenssi = "";
         this.emakset = "ACGT";
+        this.jarjestysluku = 0;
     }
 
     public void luoEmasjarjestys() {
@@ -29,9 +31,22 @@ public class Emasjarjestys {
         }
         sekvenssi = uusiSekvenssi;
     }
+    
+    public String getEmas() {
+        String emas = sekvenssi.charAt(jarjestysluku) + "";
+        return emas;
+    }
+    
+    public void kasvataJarjestyslukua() {
+        jarjestysluku++;
+    }
 
     public String getSekvenssi() {
-        return sekvenssi;
+        String s = "";
+        for (int i = 0; i < jarjestysluku + 1; i++) {
+            s = s + sekvenssi.charAt(i);
+        }
+        return s;
     }
     public int getPituus() {
         return sekvenssi.length();
