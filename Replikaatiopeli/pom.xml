@@ -36,14 +36,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
-                <configuration>
-                    <instrumentation>
-                        <includes>
-                            <include>ohha.replikaatiopeli.logiikka/*.class</include>
-                            <include>ohha.replikaatiopeli.domain/*.class</include>
-                        </includes>
-                    </instrumentation>
-                </configuration>
                 <version>2.6</version>
             </plugin>
             <plugin>

@@ -34,3 +34,21 @@ Ajankäytön kohde: Loin ensimmäisen version graafisesta käyttöliittymästä.
 Käytetty aika: 5 h
 Ajankäytön kohde: Testien kirjoittaminen, sekvenssi- ja luokkakaavioiden piirtäminen, sekä
 JavaDocin aloittaminen.
+
+11.2
+Käytetty aika: 3 h
+Ajankäytön kohde: Opetella Swingin Timer-luokan käyttöä.
+
+12.2
+Käytetty aika: 4 h 30 min
+Ajankäytön kohde: Loin ajastin-toiminnon peliin ja tein ikkunat, jotka aukeavat, kun
+häviää pelin.
+
+13.2
+Käytetty aika: 4 h
+Ajankäytön kohde: Siistin koodia ja loin aloitus-ikkunan sekä ikkunan, joka tulee,
+kun saa oikeanlaisen juosteen luotua. Tein uuden luokkakaavion ja sekvenssikaavion,
+pit-testin ja JavaDocia.
+
+Ensi viikolle olisi vielä tarkoitus saada pienimuotoinen laajennus aikaiseksi!
+Toinen vaihe peliin.

@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 import javax.swing.SwingUtilities;
 import ohha.replikaatiopeli.domain.Emasjarjestys;
+import ohha.replikaatiopeli.grafiikka.AloitusIkkuna;
 
 /**
  * Hello world!
@@ -14,9 +15,7 @@ import ohha.replikaatiopeli.domain.Emasjarjestys;
 public class App {
 
     public static void main(String[] args) {
-        Vertailija vertailija = new EmasVertailija();
-        Emasjarjestys sekvenssi = new Emasjarjestys();
-        GraafinenKali kali = new GraafinenKali(vertailija, sekvenssi);
-        SwingUtilities.invokeLater(kali);
+        AloitusIkkuna uusipeli = new AloitusIkkuna();
+        SwingUtilities.invokeLater(uusipeli);
     }
 }
