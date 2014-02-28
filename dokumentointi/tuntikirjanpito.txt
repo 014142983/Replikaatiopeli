@@ -52,3 +52,25 @@ pit-testin ja JavaDocia.
 
 Ensi viikolle olisi vielä tarkoitus saada pienimuotoinen laajennus aikaiseksi!
 Toinen vaihe peliin.
+
+24.2
+Käytetty aika: 4 h
+Ajankäytön kohde: Laajennusosan aloittaminen. Tarkoituksena, että alareunassa kulkee
+edestakaisin kolmen kirjaimen sarja. Yläreunassa kulkee kirjainsarja vasemmalle.
+Tarkoituksena, että pitää painaa välilyöntiä, kun yläreunassa kulkee värjätty kolmen
+kirjaimen sarja, joka vastaa alareunassa liikkuvaa kirjainsarjaa.
+
+26.2
+Käytetty aika: 3 h
+Ajankäytön kohde: Laajennusosan jatkaminen. Ala- ja yläreunan kirjainsarjat liikkuvat
+molemmat halutulla tavalla. 
+
+27.2
+Käytetty aika: 6 h
+Ajankäytön kohde: Laajennusosan toiminnallisuuden parantaminen.
+
+28.2
+Käytetty aika: 12 h
+Ajankäytön kohde: Pelin toiminnallisuuden viimeisteleminen. JavaDocin päivittäminen
+ja lisätestien kirjoittaminen. Ohjelman saattaminen palautuskuuntoon viimeistä
+deadlinea varten!

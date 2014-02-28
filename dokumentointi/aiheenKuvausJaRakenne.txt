@@ -1,21 +1,39 @@
-Aihe: Replikaatiopeli
+Aihe: Proteiinipeli
 
-Tarkoituksena toteuttaa peli, jossa pelaaja koodaa vastinjuosteen yksijuosteiselle
-DNA-pätkälle. DNA siis koostuu kahdesta yhtä pitkästä yhteenliittyneestä juosteesta 
-joita kuvaa tietty kirjainkombinaatio. Esimerkiksi yksi juoste voi olla AATTCGCA.
-Tällöin sen vastinjuoste on TTAAGCGT. Logiikka toimii siten, että jos alkuperäisessä
-juosteessa on kirjain A, on sitä vastaavassa vastinjuosteessa vastaavassa kohdassa
+Kyseessä on peli joka koostuu kahdesta suuremmasta osasta ja muutamasta väli-ikkunasta. 
+Ensimmäisessä osassa pelaaja koodaa vastinjuosteen yksijuosteiselle DNA-pätkälle. DNA siis 
+koostuu kahdesta yhtä pitkästä yhteenliittyneestä juosteesta, joita kuvaa tietty kirjainkombinaatio.
+Esimerkiksi yksi juoste voi olla AATTCGCA. Tällöin sen vastinjuoste on TTAAGCGT. Logiikka toimii 
+siten, että jos alkuperäisessä juosteessa on kirjain A, on sitä vastaavassa vastinjuosteessa vastaavassa kohdassa
 kirjain T. Vastaavaasti, jos alkuperäisessä juosteessa on kirjain T, on uudessa
 juosteessa A. C:tä vastaa G ja G:tä C. Peli siis tarjoaisi pelaajalle jonkin
-kirjainsarjan, jonka perusteella pelaajan pitäisi osata kirjoittaa edellä mainittujen
-sääntöjen avulla oikeanlainen tätä vastaava kirjainsarja.
+kirjainsarjan, jonka perusteella pelaajan pitäisi osata luoda vastaava kirjainsarja. Tämä
+tapahtuu painamalla graafisen käyttöliittymän painikkeita. Kullekin emäkselle on oma painikkeensa.
+Emäksen syöttämiseen on aikaa kolme sekuntia.
+
+Seuraavassa vaiheessa pelissä on kaksi liikkuvaa juostetta. Ylläoleva liikkuu oikealta vasemmalle
+ja se koostuu kolmen emäksen sarjoista, joiden välissä on alaviiva. Allaoleva koostuu kolmesta 
+punaisesta emäksestä, jotka liikkuvat ruudulla edestakaisin vasemmalle ja oikealle. Välillä ylläolevaan
+juosteeseen syntyy kolmesta pienestä kirjaimesta muodostuvia kirjainsarjoja, kun muuten emäksiä kuvataan
+isoilla kirjaimilla. Tehtävänä on painaa välilyöntiä silloin, kun pienet kirjaimet osuvat ruudulla samaan
+kohtaan kolmen punaisen kirjaimen kanssa. Oikea-aikainen painallus kasvattaa aminohappo-merkkijonoa ruudun
+alareunaan. Kun saa viisi aminohappoa lisättyä, voittaa pelin. Kolmesta väärästä painalluksesta pelin häviää.
+Ylläolevan juosteen liike myös nopeutuu oikeiden painallusten myötä.
+
+Peli alkaa aloitusikkunalla, jossa selitetään pelin tarkoitus ja annetaan ohjeet ensimmäiseen vaiheeseen.
+Aloitusikkunan painikkeesta peli käynnistyy. Myös ensimmäisen vaiheen läpäisyn jälkeen on väli-ikkuna, jossa
+opastetaan seuraavaan vaiheeseen ja nappi, jolla vaihe käynnistyy. Toisen vaiheen jälkeen on päätösikkuna,
+jossa voi vielä antaa omalle luomalleen proteiinille nimen.
 
 Käyttäjät: Pelaaja
 
 Käyttäjien toiminnot:
 
-Mahdollisuus kirjoittaa syöte ja tarkistaa onko se oikeanlainen.
-Myöhemmin, jos peliin lisäisi esimerkiksi ajanoton siitä, kuinka nopeasti
-syötteen saa tehtyä ja tuloksia saisi tallennettua,
-voisi pelissä olla ikkuna, joka näyttää parhaat tulokset mahdollisimman nopean ajan
-mukaan järjestettynä.
+Ensimäisessä vaiheessa emäspainikkeiden painaminen. Oikean emäspainikkeen painaminen kasvattaa käyttäjän
+muodostamaa juostetta, väärän painamisesta häviää pelin.
+
+Toisessa vaiheessa välilyönnin painaminen. Jos välilyöntiä painaa väärään aikaan, kasvaa virhepainalluksista
+kirjaa pitävä lukuarvo. Oikea painallukset taas kasvattavat aminohappomerkkijonoa.
+
+Väli-ikkunoiden painikkeiden painaminen. Painikkeiden avulla siirrytään vaiheista toisiin, ja viimeisessä ikkunassa
+annetaan proteiinille nimi syöttämälle tekstikenttään haluttu nimi ja painamalla "Anna nimi" -painiketta.

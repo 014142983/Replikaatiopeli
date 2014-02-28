@@ -1,0 +1,6 @@
+Käyttöohjeet:
+
+Ohjelma koostuu kahdesta vaiheesta, joita kumpaakin edeltää ikkuna, jossa selitetään mitä 
+kussakin vaiheessa tulee tehdä. Riittää siis, että ohjelman käynnistää niin eteen ilmestyy 
+aloitusikkuna, joka auttaa alkuun. Ja ensimmäisen vaiheen läpäisyn jälkeen näkyviin tulee 
+siis väli-ikkuna, jossa neuvotaan, miten seuraavassa vaiheessa tulee toimia.
