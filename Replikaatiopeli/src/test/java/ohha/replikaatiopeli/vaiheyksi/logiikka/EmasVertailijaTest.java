@@ -2,10 +2,11 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package ohha.replikaatiopeli.logiikka;
+package ohha.replikaatiopeli.vaiheyksi.logiikka;
 
+import ohha.replikaatiopeli.vaiheyksi.logiikka.EmasVertailija;
 import java.util.Random;
-import ohha.replikaatiopeli.domain.Emasjarjestys;
+import ohha.replikaatiopeli.vaiheyksi.domain.Emasjarjestys;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;

@@ -4,8 +4,6 @@
  */
 package ohha.replikaatiopeli.grafiikka;
 
-import ohha.replikaatiopeli.painikkeet.AloitaUusiPeli;
-import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.GridLayout;
@@ -14,15 +12,22 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.WindowConstants;
+import ohha.replikaatiopeli.painikkeet.YritaUudelleen;
 
 /**
- *
+ * Pelin ensimmäinen ikkuna, joka sisältää myös ohjeet
+ * pelin ensimmäiseen vaiheeseen. "Aloita peli" -nappia painamalla aloitusikkuna
+ * sulkeutuu ja ensimmäinen vaihe käynnistyy
+ * 
  * @author Leo Kallonen leo.kallonen@gmail.com
  * @version 1.1
  * @since 2014-13-02
  */
 public class AloitusIkkuna implements Runnable, Ikkuna {
     
+    /**
+     * Oliomuuttuja, johon tallennetaan aloitusikkunaan tarvittavat käyttöliittymäkomponentit.
+     */
     private JFrame frame;
 
     @Override
@@ -53,7 +58,7 @@ public class AloitusIkkuna implements Runnable, Ikkuna {
                 + "viimeistä kirjainta. Jos mallijuosteessa on A, sinun tulee painaa U, jos T paina A, C niin G "
                 + "ja G niin C.</html>");
         JButton aloitusnappi = new JButton("Aloita peli!");
-        AloitaUusiPeli uusipeli = new AloitaUusiPeli(this);
+        YritaUudelleen uusipeli = new YritaUudelleen(this);
         aloitusnappi.addActionListener(uusipeli);
         c.add(luoPelinNimi());
         c.add(alustus);

@@ -2,16 +2,20 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package ohha.replikaatiopeli.domain;
+package ohha.replikaatiopeli.vaiheyksi.domain;
 
 /**
- *
+ * Sisältää tiedon merkkijonosta, jota kasvatetaan pelin ensimmäisessä vaiheessa
+ * käyttäjän oikeiden syötteiden perusteella
+ * 
  * @author Leo Kallonen leo.kallonen@gmail.com
  * @version 1.1
  * @since 2014-02-06
  */
 public class LahettiRNA {
-    
+    /**
+     * Merkkijono, joka kasvaa käyttäjän syötteiden perusteella
+     */
     private String lahettiRNA;
     
     public LahettiRNA() {

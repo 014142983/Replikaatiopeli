@@ -2,9 +2,9 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package ohha.replikaatiopeli.domain;
+package ohha.replikaatiopeli.vaiheyksi.domain;
 
-import ohha.replikaatiopeli.domain.Emasjarjestys;
+import ohha.replikaatiopeli.vaiheyksi.domain.Emasjarjestys;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;

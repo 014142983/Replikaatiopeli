@@ -7,13 +7,14 @@ package ohha.replikaatiopeli.grafiikka;
 import javax.swing.JFrame;
 
 /**
- * Rajapinta, joka tekee pelin häviämis- ja voittamisikkunoiden antamisesta
- * parametreinä joustavampaa. Helpottaa näiden ikkunoiden sulkemista ja uuden pelin aloittamista.
+ * Rajapinta, joka helpottaa pelin ensimmäisen ja toisen vaiheen käsittelyä
+ * samalla luokalla.
  * 
  * @author Leo Kallonen leo.kallonen@gmail.com
- * @version 1.1
- * @since  2014-02-13
+ * @version 1.3
+ * @since 2014-02-27
  */
-public interface Ikkuna {
+public interface PelattavaIkkuna {
     JFrame getFrame();
+    public void run();
 }
